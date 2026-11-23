@@ -5,7 +5,7 @@ package.domain = org.cuboquesalta
 source.dir = .
 source.include_exts = py,png,jpg,kv,atlas
 version = 0.1
-requirements = python3,pygame==2.5.2
+requirements = python3,pygame
 orientation = portrait
 fullscreen = 0
 android.api = 33
