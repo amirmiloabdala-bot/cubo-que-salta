@@ -14,7 +14,7 @@ jobs:
           python-version: '3.11'
       - run: sudo apt-get update && sudo apt-get install -y ffmpeg
       - run: |
-          for f in *.mp3; do ffmpeg -y -i "$f" "${f%.mp3}.ogg"; done
+          for f in *.mp3; do ffmpeg -y -i "$f" -af volume=0.4 "${f%.mp3}.ogg"; done
           sed -i 's/\.mp3/.ogg/g' main.py
           ls *.ogg
       - run: pip install pygbag
